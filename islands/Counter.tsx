@@ -10,7 +10,7 @@ interface Props {
 
 export default function Counter(props: Props) {
     const [count, setCount] = useState(props.start);
-    const btn = tw`px-2 py-1 border(gray-100 1) hover:bg-gray-200`;
+    const btn = tw`px-2 py-1 border border-gray-300 hover:bg-gray-300 rounded-lg`;
     return (
         <div class={tw`flex gap-2 w-full`}>
             <p class={tw`flex-grow-1 font-bold text-xl`}>{count}</p>
